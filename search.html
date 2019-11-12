@@ -20,7 +20,7 @@
 			</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav">
-						<a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+						<a class="nav-item nav-link" href="index.html">Home</a>
 						<a class="nav-item nav-link" href="customer_service.html">Customer Service</a>
 						<a class="nav-item nav-link" href="new_listing.html">Post Textbook</a>
 						<a class="nav-item nav-link" href="profile.html">Profile</a>
@@ -35,11 +35,34 @@
 <div class="jumbotron" style="height:600px">
   <div class="container">
     <h1 class="display-3" style="position:relative; left:300px; top:80px" >UVA Book Bazaar</h1>
-	<input type="text" style="width:950px; position:relative; left:100px; top:100px" class="remove_button" placeholder="Title of the Textbook">
+	<input type="text" style="width:950px; position:relative; left:100px; top:100px"placeholder="Title of the Textbook">
    	<a href="single-listing.html" class="btn btn-info" style="position:relative; left:100px; top:100px">Search</a>
-   	<a href="search.html" class="w3-button w3-black" style="position:relative; left:1000px; top:100px">Advanced Search</a>
+    <div style="position:relative; left:110px; top:100px; width: 900px; height:270px;
+  border: 1px solid grey;
+  padding: 50px;
+  margin: 20px;">
+	<h4 style="position:relative; top:-30px">Tags:</h>
+    <input type="text" readonly="readonly" style="width:50px; position:absolute; left:60px; top:0px"value="New">
+    <input type="text" readonly="readonly" style="width:103px; position:relative; left:60px; top:0px"value="Like New">
+    <input type="text" readonly="readonly" style="width:120px; position:relative; left:60px; top:0px"value="Very Good">
+    <input type="text" readonly="readonly" style="width:65px; position:relative; left:60px; top:0px"value="Good">
+    <input type="text" readonly="readonly" style="width:45px; position:relative; left:60px; top:0px"value="Fair">
+    <input type="text" readonly="readonly"style="width:60px; position:relative; left:60px; top:0px"value="Poor">
 
 
+   	<h4 style="position:relative; top:-30px">Title:</h>
+   	<input type="text" style="width:700px; position:absolute; left:60px; top:0px"placeholder="Enter the title of the textbook">
+	<h4 style="position:relative; top:-30px">Author:</h>
+   	<input type="text" style="width:670px; position:relative; left:0px; top:0px"placeholder="Enter the Author of the textbook">
+	<h4 style="position:relative; top:-30px">Year:</h>
+   	<input type="text" style="width:700px; position:relative; left:0px; top:0px"placeholder="Enter the Year the textbook was published">
+	<h4 style="position:relative; top:-30px">Class:</h>
+   	<input type="text" style="width:693px; position:relative; left:0px; top:0px"placeholder="Enter the Class for the textbook">
+	<h4 style="position:relative; top:-30px">ISBN:</h>
+   	<input type="text" style="width:695px; position:relative; left:0px; top:0px"placeholder="Enter the textbook ISBN">
+
+
+	</div>
   </div>
 </div>
 
@@ -65,3 +88,4 @@
     <i>CS 3205, F19. Team Baboons.</i>
   </div>
 </footer>
+

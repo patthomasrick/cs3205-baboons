@@ -11,13 +11,25 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<div class="jumbotron">
-  <div class="container">
-    <h1 class="display-3">UVA BB - New Listing</h1>
-    <hr class="my-2">
-    <h4>Post your textbook to sell.</h4>
-  </div>
-</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href=>UVA BookBazaar</a>
+			<button class="navbar-toggler" type="button" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-item nav-link" href="index.html">Home</a>
+						<a class="nav-item nav-link" href="customer_service.html">Customer Service</a>
+						<a class="nav-item nav-link" href="new_listing.html">Post Textbook</a>
+						<a class="nav-item nav-link" href="profile.html">Profile</a>
+						<a class="nav-item nav-link" href="single_listing.html">Listings</a>
+					</div>
+				</div>
+				<div class="nav navbar-nav justify-content-end">
+					<a class="nav-item nav-link" href="{% url 'logout' %}">Log Out</a>
+				</div>
+        </nav>
+<br>
 
 <div class="container">
   <div class="container">
@@ -25,7 +37,7 @@
       <div class="form-inline mb-4 row centered">
         <label for="searchTextBox" class="col-auto">Search for a book</label>
         <input class="form-control col mx-3" id="searchTextBox" placeholder="The UX Book">
-        <button type="submit" class="btn btn-primary col-auto">Search</button>
+   		<a href="single-listing.html" class="btn btn-info">Search</a>
       </div>
     </form>
   </div>
@@ -91,7 +103,7 @@
                     placeholder="Detailed description of book quality or pickup instructions (wear and tear, highlighting, etc.)"></textarea>
         </div>
         <div class="row justify-content-end">
-          <button type="submit" class="btn btn-primary">Post</button>
+   			<a href="single-listing.html" class="btn btn-info">Post</a>
         </div>
       </form>
 
