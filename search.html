@@ -20,7 +20,7 @@
 			</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav">
-						<a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+						<a class="nav-item nav-link" href="index.html">Home</a>
 						<a class="nav-item nav-link" href="customer_service.html">Customer Service</a>
 						<a class="nav-item nav-link" href="new_listing.html">Post Textbook</a>
 						<a class="nav-item nav-link" href="profile.html">Profile</a>
@@ -32,14 +32,37 @@
 					<a class="nav-item nav-link" href="{% url 'logout' %}">Log Out</a>
 				</div>
         </nav>
-<div class="jumbotron" style="height:600px">
+<div class="jumbotron" style="height:700px">
   <div class="container">
     <h1 class="display-3" style="position:relative; left:300px; top:80px" >UVA Book Bazaar</h1>
 	<input type="text" style="width:950px; position:relative; left:100px; top:100px" class="form-control col mx-3" placeholder="Title of the Textbook">
    	<a href="single_listing.html" class="btn btn-info" style="position:relative; left:1070px; top:63px">Search</a>
-   	<a href="search.html" class="w3-button w3-black" style="position:relative; left:1000px; top:100px">Advanced Search</a>
+    <div style="position:relative; left:110px; top:100px; width: 900px; height:300px;
+  border: 1px solid grey;
+  padding: 50px;
+  margin: 20px;">
+	<h4 style="position:relative; top:-30px">Tags:</h>
+    <input type="text" class="form-control col mx-3" readonly="readonly" style="width:60px; position:absolute; left:60px; top:0px"value="New">
+    <input type="text" class="form-control col mx-3" readonly="readonly" style="width:90px; position:relative; left:130px; top:-28px"value="Like New">
+    <input type="text" class="form-control col mx-3" readonly="readonly" style="width:100px; position:relative; left:230px; top:-66px"value="Very Good">
+    <input type="text" class="form-control col mx-3" readonly="readonly" style="width:65px; position:relative; left:340px; top:-104px"value="Good">
+    <input type="text" class="form-control col mx-3" readonly="readonly" style="width:50px; position:relative; left:415px; top:-142px"value="Fair">
+    <input type="text" class="form-control col mx-3"readonly="readonly"style="width:60px; position:relative; left:475px; top:-180px"value="Poor">
 
 
+   	<h4 style="position:relative; top:-210px">Title:</h>
+   	<input type="text" class="form-control col mx-3" style="width:700px; position:absolute; left:60px; top:0px"placeholder="Enter the title of the textbook">
+	<h4 style="position:relative; top:-205px">Author:</h>
+   	<input type="text" class="form-control col mx-3" style="width:670px; position:absolute; left:90px; top:0px"placeholder="Enter the Author of the textbook">
+	<h4 style="position:relative; top:-200px">Year:</h>
+   	<input type="text" class="form-control col mx-3" style="width:700px; position:absolute; left:60px; top:0px"placeholder="Enter the Year the textbook was published">
+	<h4 style="position:relative; top:-195px">Class:</h>
+   	<input type="text" class="form-control col mx-3" style="width:693px; position:absolute; left:67px; top:0px"placeholder="Enter the Class for the textbook">
+	<h4 style="position:relative; top:-190px">ISBN:</h>
+   	<input type="text" class="form-control col mx-3" style="width:695px; position:absolute; left:65px; top:0px"placeholder="Enter the textbook ISBN">
+
+
+	</div>
   </div>
 </div>
 
@@ -65,3 +88,4 @@
     <i>CS 3205, F19. Team Baboons.</i>
   </div>
 </footer>
+
