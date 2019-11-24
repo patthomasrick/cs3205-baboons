@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
   <title>UVA Book Bazaar</title>
   <!-- Required meta tags -->
@@ -8,76 +9,86 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href=>UVA BookBazaar</a>
-			<button class="navbar-toggler" type="button" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav">
-						<a class="nav-item nav-link" href="index.html">Home</a>
-						<a class="nav-item nav-link" href="customer_service.html">Customer Service</a>
-						<a class="nav-item nav-link" href="new_listing.html">Post Textbook</a>
-						<a class="nav-item nav-link" href="profile.html">Profile</a>
-						<a class="nav-item nav-link" href="single_listing.html">Listings</a>
-					</div>
-				</div>
-				<div class="nav navbar-nav justify-content-end">
-					<a class="nav-item nav-link" href="{% url 'logout' %}">Log Out</a>
-				</div>
-        </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">UVA Book Bazaar</a>
+    <button class="navbar-toggler" type="button" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="listing.html">Listings</a>
+        <a class="nav-item nav-link" href="new_listing.html">Post Textbook</a>
+        <a class="nav-item nav-link" href="profile.html">Profile</a>
+      </div>
+    </div>
+    <div class="nav navbar-nav justify-content-end">
+      <a class="nav-item nav-link" href="#">Login</a>
+      <a class="nav-item nav-link" href="#">Logout</a>
+    </div>
+  </nav>
 
-<div class="container">
-  Site rules:
-  <ul>
-    <li>Show up to agreed to meetings.</li>
-    <li>Sell books for the agreed to price.</li>
-    <li>Do not make fake posts to sell books.</li>
-    <li>Properly describe the book you are selling.</li>
-  </ul>
-  If a user has violated any of these rules, report them below.
+  <div class="container">
+    <h2 class="mt-4">Submit a Ticket</h2>
 
-  <h2 class="mt-4">Submit a Ticket</h2>
-  <form class="form container">
-    <div class="row form-inline mb-2">
-      <label for="myText" class="col-2">User being reported (if any)</label>
-      <input type="text" id="myText" value="" class="form-control col-6"/>
-    </div>
-    <!--    <div class="row form-inline mb-2">-->
-    <!--      <label for="reason" class="col-3 text-right">Reason</label>-->
-    <!--      <input type="text" id="reason" value="" class="form-control col-4" required/>-->
-    <!--    </div>-->
-    <div class="row form-inline mb-2">
-      <label for="explanation" class="col-2">Explanation</label>
-      <textarea id="explanation" rows="4" cols="20" class="form-control col-6" required></textarea>
-    </div>
-    <div class="row ">
-      <div class="col-7"></div>
-      <button onclick="location.href = 'thank_you.html';" type="button" class="col-1 btn btn-primary">
-        Submit
-      </button>
-    </div>
-  </form>
-</div>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    Site rules:
+    <ul>
+      <li>Show up to agreed to meetings.</li>
+      <li>Sell books for the agreed to price.</li>
+      <li>Do not make fake posts to sell books.</li>
+      <li>Properly describe the book you are selling.</li>
+    </ul>
+    If a user has violated any of these rules, report them below.
+
+    <form class="form container mt-5">
+      <div class="row form-inline mb-2">
+        <label for="myText" class="col-2">User being reported (if any)</label>
+        <input type="text" id="myText" value="" class="form-control col-6" />
+      </div>
+      <!--    <div class="row form-inline mb-2">-->
+      <!--      <label for="reason" class="col-3 text-right">Reason</label>-->
+      <!--      <input type="text" id="reason" value="" class="form-control col-4" required/>-->
+      <!--    </div>-->
+      <div class="row form-inline mb-2">
+        <label for="explanation" class="col-2">Explanation</label>
+        <textarea id="explanation" rows="4" cols="20" class="form-control col-6" required></textarea>
+      </div>
+      <div class="row ">
+        <div class="col-7"></div>
+        <button onclick="location.href = 'thank_you.html';" type="button" class="col-1 btn btn-primary">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
-<footer class="page-footer font-small bg-secondary text-white p-4 mt-3">
+<footer class="page-footer font-small bg-secondary text-white p-4 mt-5">
   <div class="container-fluid text-center">
-    <i>CS 3205, F19. Team Baboons.</i>
+    <i>
+      CS 3205, F19. Team Baboons.
+      <a href="customer_service.html" class="text-info">
+        Questions? Comments? Problems? Contact us here.
+      </a>
+    </i>
   </div>
 </footer>
+
 </html>

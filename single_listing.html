@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>UVA BB - New Listing</title>
   <!-- Required meta tags -->
@@ -8,147 +9,169 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href=>UVA BookBazaar</a>
-			<button class="navbar-toggler" type="button" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav">
-						<a class="nav-item nav-link" href="index.html">Home</a>
-						<a class="nav-item nav-link" href="customer_service.html">Customer Service</a>
-						<a class="nav-item nav-link" href="listing.html">Post Textbook</a>
-						<a class="nav-item nav-link" href="profile.html">Profile</a>
-						<a class="nav-item nav-link" href="listing.html">Listings</a>
-					</div>
-				</div>
-				<div class="nav navbar-nav justify-content-end">
-					<a class="nav-item nav-link" href="{% url 'logout' %}">Log Out</a>
-				</div>
-        </nav>
-<br>
-
-<div class="container">
-  <div class="container">
-    <form class="form">
-      <div class="form-inline mb-4 row centered">
-        <label for="searchTextBox" class="col-auto">Search for a book</label>
-        <input class="form-control col mx-3" id="searchTextBox" placeholder="Architectural Drafting & Design">
-   		<a href="single_listing.html" class="btn btn-info">Search</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href=>UVA BookBazaar</a>
+    <button class="navbar-toggler" type="button" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="customer_service.html">Customer Service</a>
+        <a class="nav-item nav-link" href="listing.html">Post Textbook</a>
+        <a class="nav-item nav-link" href="profile.html">Profile</a>
+        <a class="nav-item nav-link" href="listing.html">Listings</a>
       </div>
-    </form>
-  </div>
-
-  <div class="row container border rounded p-3">
-    <div class="col-3">
-      <img src="https://images-na.ssl-images-amazon.com/images/I/91Kq5IDuJCL._SL1500_.jpg" class="img-thumbnail" alt="Add an image">
     </div>
-    <div class="col">
+    <div class="nav navbar-nav justify-content-end">
+      <a class="nav-item nav-link" href="{% url 'logout' %}">Log Out</a>
+    </div>
+  </nav>
+  <br>
+
+  <div class="container">
+    <div class="container">
       <form class="form">
-      	<p align="right">Listed Price: 40$</p>
-        <div class="form-check" align="right">
+        <div class="form-inline mb-4 row centered">
+          <label for="searchTextBox" class="col-auto">Search for a book</label>
+          <input class="form-control col mx-3" id="searchTextBox" placeholder="Architectural Drafting & Design">
+          <a href="single_listing.html" class="btn btn-info">Search</a>
+        </div>
+      </form>
+    </div>
+
+    <div class="row container border rounded p-3">
+      <div class="col-3">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/91Kq5IDuJCL._SL1500_.jpg" class="img-thumbnail"
+          alt="Add an image">
+      </div>
+      <div class="col">
+        <form class="form">
+          <p align="right">Listed Price: 40$</p>
+          <div class="form-check" align="right">
             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
             <label class="form-check-label" for="defaultCheck1">
-            Like
+              Like
             </label>
 
-<div class="container">
+            <div class="container">
 
 
-        </div>
-        <div class="form-inline row mb-2">
-          <p for="bookTitle" class="col-2">Title:</p>
-          <p>Architectural Drafting & Design</p>
-        </div>
-        <div class="form-inline row mb-2">
-          <p for="author" class="col-2">Author:</p>
-          <p>Alan Jefferis; David A. Madsen; David P. Madsen</p>
-        </div>
-        <div class="form-inline row mb-2">
-          <p for="year" class="col-2">Year:</p>
-          <p>2017</p>
-        </div>
-        <div class="form-inline row mb-2">
-          <p for="tags" class="col-2">Tags:</p>
-          <p>New</p>
-        </div>
-        <div class="form-inline row mb-2">
-          <p for="className" class="col-2">ISBN:</p>
-    	  <p>0-8377-0208-9</p>
-        </div>
-        <div class="form-inline row mb-2">
-          <p for="description" class="col-2">Sold by:</p>
-            <p><a href="seller_profile.html" class="btn btn-info">Contact Seller</a></p>
-        </div>
-          <div class="form-inline row mb-2">
-            <p>Additional Information: </p>
-          </div>
-          <div class="row">
+            </div>
+            <div class="form-inline row mb-2">
+              <p for="bookTitle" class="col-2">Title:</p>
+              <p>Architectural Drafting & Design</p>
+            </div>
+            <div class="form-inline row mb-2">
+              <p for="author" class="col-2">Author:</p>
+              <p>Alan Jefferis; David A. Madsen; David P. Madsen</p>
+            </div>
+            <div class="form-inline row mb-2">
+              <p for="year" class="col-2">Year:</p>
+              <p>2017</p>
+            </div>
+            <div class="form-inline row mb-2">
+              <p for="tags" class="col-2">Tags:</p>
+              <p>New</p>
+            </div>
+            <div class="form-inline row mb-2">
+              <p for="className" class="col-2">ISBN:</p>
+              <p>0-8377-0208-9</p>
+            </div>
+            <div class="form-inline row mb-2">
+              <p for="description" class="col-2">Sold by:</p>
+              <p><a href="seller_profile.html" class="btn btn-info">Contact Seller</a></p>
+            </div>
+            <div class="form-inline row mb-2">
+              <p>Additional Information: </p>
+            </div>
+            <div class="row">
               <div class="col">
-                  Other Listings
+                Other Listings
               </div>
               <div class="col">
-                  Previous Sales of this Book
+                Previous Sales of this Book
               </div>
-          </div>
-          <div class="row">
+            </div>
+            <div class="row">
               <div class="col">
-                  <div class="row container border rounded p-3">
-                    <div class="row">
-                        <div class="col">Condition: Good</div>
-                        <div class="col">Listed Price: $35</div>
-                    </div>
-                      <div class="row">
-                        <div class="col">Condition: Good</div>
-                        <div class="col">Listed Price: $25</div>
-                    </div>
+                <div class="row container border rounded p-3">
+                  <div class="row">
+                    <div class="col">Condition: Good</div>
+                    <div class="col">Listed Price: $35</div>
                   </div>
+                  <div class="row">
+                    <div class="col">Condition: Good</div>
+                    <div class="col">Listed Price: $25</div>
+                  </div>
+                </div>
               </div>
               <div class="col">
-                  <div class="row container border rounded p-3">
-                    <div class="row">
-                        <div class="col">Condition: Good</div>
-                        <div class="col">Sold Price: $32</div>
-                        <div class="col">Date Sold: 07/23/19</div>
-                    </div>
-                      <div class="row">
-                        <div class="col">Condition: Like New</div>
-                        <div class="col">Listed Price: $37</div>
-                          <div class="col"> Date Sold: 09/23/19</div>
-                    </div>
+                <div class="row container border rounded p-3">
+                  <div class="row">
+                    <div class="col">Condition: Good</div>
+                    <div class="col">Sold Price: $32</div>
+                    <div class="col">Date Sold: 07/23/19</div>
                   </div>
+                  <div class="row">
+                    <div class="col">Condition: Like New</div>
+                    <div class="col">Listed Price: $37</div>
+                    <div class="col"> Date Sold: 09/23/19</div>
+                  </div>
+                </div>
               </div>
-          </div>
-        <div class="row justify-content-end">
-        	<p class="col-3">Posted on: September 30th</p>
-        </div>
+            </div>
+            <div class="row justify-content-end">
+              <p class="col-3">Posted on: September 30th</p>
+            </div>
 
+            <p style="position: relative; TOP: -200px; LEFT:300px;">
+              <strong>Class: </strong>
+            </p>
+            <p style="position: relative; TOP: -200px; LEFT:300px;">
+              <a href="seller_profile.html" class="w3-button w3-black">Contact Seller</a>
+            </p>
+            <p style="position: relative; TOP: -200px; LEFT:300px;">
+              <strong>
+                Like
+              </strong>
+              <input type="radio" value="Like">
+            </p>
+          </div>
         </div>
         </form>
 
+      </div>
     </div>
-  </div>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-          crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-          crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-          crossorigin="anonymous"></script>
-</div >
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  </div>
 </body>
 
-<footer class="page-footer font-small bg-secondary text-white p-4 mt-3">
+<footer class="page-footer font-small bg-secondary text-white p-4">
   <div class="container-fluid text-center">
-    <i>CS 3205, F19. Team Baboons.</i>
+    <i>
+      CS 3205, F19. Team Baboons.
+      <a href="customer_service.html" class="text-info">
+        Questions? Comments? Problems? Contact us here.
+      </a>
+    </i>
   </div>
 </footer>
+
 </html>
