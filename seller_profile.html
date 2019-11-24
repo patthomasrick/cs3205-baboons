@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
   <title>UVA BB - Profile</title>
   <!-- Required meta tags -->
@@ -8,75 +9,76 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href=>UVA BookBazaar</a>
-			<button class="navbar-toggler" type="button" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav">
-						<a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
-						<a class="nav-item nav-link" href="customer_service.html">Customer Service</a>
-						<a class="nav-item nav-link" href="new_listing.html">Post Textbook</a>
-						<a class="nav-item nav-link" href="profile.html">Profile</a>
-						<a class="nav-item nav-link" href="listing.html">Listings</a>
-					</div>
-				</div>
-				<div class="nav navbar-nav justify-content-end">
-					<a class="nav-item nav-link" href="{% url 'social:begin' 'google-oauth2' %}">Login</a>
-					<a class="nav-item nav-link" href="{% url 'logout' %}">Log Out</a>
-				</div>
-        </nav>
-<br>
-
-<div class="container">
-  <div class="row">
-    <div class="col-2">
-      <img src="https://t4.ftcdn.net/jpg/02/15/84/43/240_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg"
-           alt="Profile image" class="img-thumbnail fluid">
-    </div>
-    <div class="col-5 ml-3 mr-3">
-
-      <h1>John Doe's Profile</h1>
-      <form class="form">
-        <div class="row form-inline mb-2 center">
-          <label for="myText" class="col-4">Name</label>
-          <input type="text" id="myText" value="John Smith" class="form-control col-7" readonly/>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+      <a class="navbar-brand" href="index.html">UVA Book Bazaar</a>
+      <button class="navbar-toggler" type="button" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="listing.html">Listings</a>
+          <a class="nav-item nav-link" href="new_listing.html">Post Textbook</a>
+          <a class="nav-item nav-link" href="profile.html">Profile</a>
         </div>
+      </div>
+      <div class="nav navbar-nav justify-content-end">
+        <a class="nav-item nav-link" href="#">Login</a>
+        <a class="nav-item nav-link" href="#">Logout</a>
+      </div>
+    </nav>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <img src="https://t4.ftcdn.net/jpg/02/15/84/43/240_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg"
+          alt="Profile image" class="img-thumbnail fluid">
+      </div>
+      <div class="col-5 ml-3 mr-3">
 
+        <h1>John Doe's Profile</h1>
+        <form class="form">
+          <div class="row form-inline mb-2 center">
+            <label for="myText" class="col-4">Name</label>
+            <input type="text" id="myText" value="John Smith" class="form-control col-7" readonly />
+          </div>
 
-        <div class="row form-inline mb-2 center">
-          <label for="email" class="col-4">Email</label>
-          <input type="text" id="email" value="john.smith@gmail.com" class="form-control col-7" readonly/>
-        </div>
-      </form>
+          <div class="row form-inline mb-2 center">
+            <label for="email" class="col-4">Email</label>
+            <input type="text" id="email" value="john.smith@gmail.com" class="form-control col-7" readonly />
+          </div>
+        </form>
+      </div>
+      <div class="col-4">
+        <h3>Previous transactions</h3>
+        <h5>Purchased</h5>
+        <ul>
+          <li>None available!</li>
+        </ul>
+        <h5>Sold</h5>
+        <ul>
+          <li>None available!</li>
+        </ul>
+      </div>
     </div>
-    <div class="col-4">
-      <h3>Previous transactions</h3>
-      <h5>Purchased</h5>
-      <ul>
-        <li>Item | Date</li>
-        <li>Item | Date</li>
-        <li>Item | Date</li>
-      </ul>
-      <h5>Sold</h5>
-      <ul>
-        <li>Item | Date</li>
-        <li>Item | Date</li>
-      </ul>
-    </div>
+
   </div>
-
-</div>
 </body>
 
-<footer class="page-footer font-small bg-secondary text-white p-4 mt-3">
+<footer class="page-footer font-small bg-secondary text-white p-4 mt-5">
   <div class="container-fluid text-center">
-    <i>CS 3205, F19. Team Baboons.</i>
+    <i>
+      CS 3205, F19. Team Baboons.
+      <a href="customer_service.html" class="text-info">
+        Questions? Comments? Problems? Contact us here.
+      </a>
+    </i>
   </div>
 </footer>
+
 </html>

@@ -2,66 +2,78 @@
 <html lang="en">
 
 <head>
-  <title >UVA Book Bazaar</title>
+  <title>UVA Book Bazaar</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href=>UVA BookBazaar</a>
-			<button class="navbar-toggler" type="button" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav">
-						<a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
-						<a class="nav-item nav-link" href="customer_service.html">Customer Service</a>
-						<a class="nav-item nav-link" href="new_listing.html">Post Textbook</a>
-						<a class="nav-item nav-link" href="profile.html">Profile</a>
-						<a class="nav-item nav-link" href="listing.html">Listings</a>
-					</div>
-				</div>
-				<div class="nav navbar-nav justify-content-end">
-					<a class="nav-item nav-link" href="{% url 'social:begin' 'google-oauth2' %}">Login</a>
-					<a class="nav-item nav-link" href="{% url 'logout' %}">Log Out</a>
-				</div>
-        </nav>
-<div class="jumbotron" style="height:600px">
-  <div class="container">
-    <h1 class="display-3" style="position:relative; left:300px; top:80px" >UVA Book Bazaar</h1>
-	<input type="text" style="width:950px; position:relative; left:100px; top:100px" class="form-control col mx-3" placeholder="Title of the Textbook">
-   	<a href="listing.html" class="btn btn-info" style="position:relative; left:1070px; top:63px">Search</a>
-   	<a href="search.html" class="w3-button w3-black" style="position:relative; left:1000px; top:100px">Advanced Search</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">UVA Book Bazaar</a>
+    <button class="navbar-toggler" type="button" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="listing.html">Listings</a>
+        <a class="nav-item nav-link" href="new_listing.html">Post Textbook</a>
+        <a class="nav-item nav-link" href="profile.html">Profile</a>
+      </div>
+    </div>
+    <div class="nav navbar-nav justify-content-end">
+      <a class="nav-item nav-link" href="#">Login</a>
+      <a class="nav-item nav-link" href="#">Logout</a>
+    </div>
+  </nav>
 
-
+  <div class="jumbotron jumbotron-fluid" class="pt-5 pb-5">
+    <div class="container">
+      <h1 class="display-3 text-center mt-5 pt-5">UVA Book Bazaar</h1>
+      <div class="form-group">
+        <div class="input-group row mt-5">
+          <input type="text" class="form-control col" placeholder="Title of the Textbook">
+          <div class="input-group-append">
+            <a href="listing.html" class="btn btn-primary">Search</a>
+          </div>
+        </div>
+        <div class="row mt-3 pb-5 mb-5">
+          <div class="ml-auto">
+            <a href="search.html" class="w3-button w3-black">Advanced
+              Search</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-
-<div class="container">
-
-
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-          crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-          crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-          crossorigin="anonymous"></script>
-</div>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
-<footer class="page-footer font-small bg-secondary text-white p-4 mt-3">
+<footer class="page-footer font-small bg-secondary text-white p-4">
   <div class="container-fluid text-center">
-    <i>CS 3205, F19. Team Baboons.</i>
+    <i>
+      CS 3205, F19. Team Baboons.
+      <a href="customer_service.html" class="text-info">
+        Questions? Comments? Problems? Contact us here.
+      </a>
+    </i>
   </div>
 </footer>
+
+</html>
